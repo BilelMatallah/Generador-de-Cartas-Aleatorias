@@ -57,3 +57,12 @@ body {
   content: "\2666";
   color: red;
 }
+
+.update {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}

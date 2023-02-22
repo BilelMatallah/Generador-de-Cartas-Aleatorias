@@ -5,11 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.addEventListener("load", function() {
-  document.querySelector(".card").classList.add(simboloRandom());
-  document.querySelector(".card").innerHTML = numeroRandom();
-});
-
 let numeroRandom = () => {
   let numeros = [
     "A",
@@ -35,3 +30,18 @@ let simboloRandom = () => {
   let indexsimbolos = Math.floor(Math.random() * simbolos.length);
   return simbolos[indexsimbolos];
 };
+
+window.onload = function() {
+  document.querySelector(".card").classList.add(simboloRandom());
+  document.querySelector(".card").innerHTML = numeroRandom();
+};
+
+setInterval(() => {
+  document.querySelector(".card").classList.add(simboloRandom());
+  document.querySelector(".card").innerHTML = numeroRandom();
+}, 2000);
+
+document.querySelector(".update").addEventListener("click", function() {
+  document.querySelector(".card").classList.add(simboloRandom());
+  document.querySelector(".card").innerHTML = numeroRandom();
+});
