@@ -45,3 +45,5 @@ document.querySelector(".update").addEventListener("click", function() {
   document.querySelector(".card").classList.add(simboloRandom());
   document.querySelector(".card").innerHTML = numeroRandom();
 });
+
+//Mi problema con este proyecto es que en la mayor parte de los casos salen diamantes. ¿Será que hay un error?
